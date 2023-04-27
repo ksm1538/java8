@@ -32,7 +32,7 @@ public class Example12 {
         };
 
         // invokeAll : 해당 callable 작업이 모두 끝나야 결과값 반환.
-        // invokeAny : 하나라도 빨리 끝나면, 그 하나의 결과값 반환
+        // invokeAny : 하나라도 빨리 끝나면, 그 하나의 결과값 반환.
         List<Future<String>> resultList = executorService.invokeAll(Arrays.asList(callable1, callable2, callable3));
 
         for (Future<String> f : resultList) {
