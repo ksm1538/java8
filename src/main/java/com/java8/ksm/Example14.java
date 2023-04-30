@@ -25,6 +25,7 @@ public class Example14 {
         System.out.println(futureCombine.get());
     }
 
+    // Future 의 결과값을 이용해서 CompletableFuture 로 반환
     static CompletableFuture<String> combineString(String s) {
         return CompletableFuture.supplyAsync(() -> {
             System.out.println("combineString is Running : " + Thread.currentThread().getName());
